@@ -1,0 +1,871 @@
+year,countyfip,county_name,state_name,total_population,per_capita_personal_income,unemp_rate
+2008,1,Alameda,California,1468793,48349,6.22
+2009,1,Alameda,California,1489583,45893,10.72
+2010,1,Alameda,California,1512997,47625,11.14
+2011,1,Alameda,California,1530893,50432,10.26
+2012,1,Alameda,California,1553729,52296,8.83
+2013,1,Alameda,California,1579508,54131,7.33
+2014,1,Alameda,California,1607638,57009,5.9
+2015,1,Alameda,California,1634326,61618,4.78
+2016,1,Alameda,California,1650765,65215,4.33
+2017,1,Alameda,California,1659824,69258,3.7
+2018,1,Alameda,California,1666596,74193,3.06
+2019,1,Alameda,California,1668412,79878,2.98
+2020,1,Alameda,California,1680380,87561,8.98
+2021,1,Alameda,California,1643837,98657,6.09
+2022,1,Alameda,California,1628997,97754,3.3
+2008,3,Alpine,California,1063,37726,10.98
+2009,3,Alpine,California,1042,38420,15.33
+2010,3,Alpine,California,1161,41867,13.56
+2011,3,Alpine,California,1093,54040,13.17
+2012,3,Alpine,California,1111,56293,11.44
+2013,3,Alpine,California,1131,54549,9.85
+2014,3,Alpine,California,1083,61368,8.32
+2015,3,Alpine,California,1080,63924,7.42
+2016,3,Alpine,California,1053,70376,6.57
+2017,3,Alpine,California,1116,68653,6.29
+2018,3,Alpine,California,1081,74453,4.67
+2019,3,Alpine,California,1113,79397,5.32
+2020,3,Alpine,California,1204,74088,12.24
+2021,3,Alpine,California,1235,69869,8.28
+2022,3,Alpine,California,1190,67551,5.43
+2008,5,Amador,California,38046,33890,7.72
+2009,5,Amador,California,38038,33042,11.9
+2010,5,Amador,California,37883,34327,14.37
+2011,5,Amador,California,37539,34847,13.84
+2012,5,Amador,California,37105,35633,12.46
+2013,5,Amador,California,36624,36375,10.44
+2014,5,Amador,California,36734,37936,8.39
+2015,5,Amador,California,37039,39764,6.64
+2016,5,Amador,California,37443,40310,5.97
+2017,5,Amador,California,38549,41237,5.02
+2018,5,Amador,California,39349,41827,4.1
+2019,5,Amador,California,39693,43913,3.92
+2020,5,Amador,California,40532,47359,9.43
+2021,5,Amador,California,41144,49980,6.99
+2022,5,Amador,California,41412,48463,4.43
+2008,7,Butte,California,219059,31806,8.48
+2009,7,Butte,California,219875,31868,12.8
+2010,7,Butte,California,219951,32994,14.22
+2011,7,Butte,California,219983,33669,13.89
+2012,7,Butte,California,220877,34536,12.35
+2013,7,Butte,California,221649,35368,10.45
+2014,7,Butte,California,223525,36603,8.75
+2015,7,Butte,California,224643,39352,7.22
+2016,7,Butte,California,226222,40662,6.64
+2017,7,Butte,California,228700,41581,5.83
+2018,7,Butte,California,230330,42630,5.08
+2019,7,Butte,California,218726,45917,5.11
+2020,7,Butte,California,210135,51308,9.41
+2021,7,Butte,California,206190,56011,6.88
+2022,7,Butte,California,207303,54974,4.45
+2008,9,Calaveras,California,46932,36079,8.71
+2009,9,Calaveras,California,46659,35585,14.14
+2010,9,Calaveras,California,45467,36742,14.8
+2011,9,Calaveras,California,45159,37516,14.27
+2012,9,Calaveras,California,44816,37399,12.56
+2013,9,Calaveras,California,44658,37734,10.07
+2014,9,Calaveras,California,44677,39733,8.11
+2015,9,Calaveras,California,44972,42659,6.44
+2016,9,Calaveras,California,45307,44010,5.69
+2017,9,Calaveras,California,45658,45833,4.76
+2018,9,Calaveras,California,45747,47296,4.03
+2019,9,Calaveras,California,46119,50095,3.84
+2020,9,Calaveras,California,45346,54090,7.84
+2021,9,Calaveras,California,46219,56723,5.79
+2022,9,Calaveras,California,46563,56001,3.65
+2008,11,Colusa,California,21201,38177,13.98
+2009,11,Colusa,California,21325,40740,18.35
+2010,11,Colusa,California,21435,40294,21.33
+2011,11,Colusa,California,21315,40313,21.8
+2012,11,Colusa,California,21274,36669,21.2
+2013,11,Colusa,California,21239,39501,19.18
+2014,11,Colusa,California,21156,34844,17.68
+2015,11,Colusa,California,21208,39272,15.58
+2016,11,Colusa,California,21476,41196,15.63
+2017,11,Colusa,California,21558,41189,14.41
+2018,11,Colusa,California,21389,45624,13.2
+2019,11,Colusa,California,21474,44658,12.93
+2020,11,Colusa,California,21858,56086,16.3
+2021,11,Colusa,California,21913,59102,12.57
+2022,11,Colusa,California,21914,55502,11.61
+2008,13,Contra Costa,California,1025412,58263,6.23
+2009,13,Contra Costa,California,1040594,53921,10.38
+2010,13,Contra Costa,California,1052516,53631,11.22
+2011,13,Contra Costa,California,1065361,57227,10.48
+2012,13,Contra Costa,California,1077439,61059,9.11
+2013,13,Contra Costa,California,1093253,60387,7.6
+2014,13,Contra Costa,California,1108665,62381,6.26
+2015,13,Contra Costa,California,1124148,67056,5.07
+2016,13,Contra Costa,California,1137259,70261,4.48
+2017,13,Contra Costa,California,1145623,74770,3.88
+2018,13,Contra Costa,California,1150840,78504,3.2
+2019,13,Contra Costa,California,1152883,80243,3.11
+2020,13,Contra Costa,California,1165986,86359,9.06
+2021,13,Contra Costa,California,1163298,94834,6.38
+2022,13,Contra Costa,California,1156966,95047,3.52
+2008,15,Del Norte,California,28885,25857,8.83
+2009,15,Del Norte,California,29058,25993,12.28
+2010,15,Del Norte,California,28568,27355,13.51
+2011,15,Del Norte,California,28447,28194,13.55
+2012,15,Del Norte,California,28195,28596,13.73
+2013,15,Del Norte,California,27821,29550,11.98
+2014,15,Del Norte,California,27182,31479,10.18
+2015,15,Del Norte,California,27198,33072,8.6
+2016,15,Del Norte,California,27415,34105,7.55
+2017,15,Del Norte,California,27383,34350,6.48
+2018,15,Del Norte,California,27793,35090,5.73
+2019,15,Del Norte,California,27903,36566,5.83
+2020,15,Del Norte,California,27601,41477,9.69
+2021,15,Del Norte,California,27553,44708,7.59
+2022,15,Del Norte,California,27082,43677,5.11
+2008,17,El Dorado,California,176852,48203,7.01
+2009,17,El Dorado,California,177921,46674,11.31
+2010,17,El Dorado,California,181161,48228,12.5
+2011,17,El Dorado,California,180963,50362,11.92
+2012,17,El Dorado,California,180613,52415,10.39
+2013,17,El Dorado,California,181529,53830,8.61
+2014,17,El Dorado,California,183157,56210,7.07
+2015,17,El Dorado,California,184627,58818,5.74
+2016,17,El Dorado,California,186027,62076,5.14
+2017,17,El Dorado,California,188793,63328,4.39
+2018,17,El Dorado,California,190925,66033,3.64
+2019,17,El Dorado,California,193057,68992,3.54
+2020,17,El Dorado,California,191220,74197,8.48
+2021,17,El Dorado,California,193590,79736,5.8
+2022,17,El Dorado,California,192646,82062,3.38
+2008,19,Fresno,California,902311,30454,10.58
+2009,19,Fresno,California,913555,30176,15.28
+2010,19,Fresno,California,932011,31181,17.11
+2011,19,Fresno,California,939251,32669,16.82
+2012,19,Fresno,California,944779,33288,15.35
+2013,19,Fresno,California,951143,34426,13.42
+2014,19,Fresno,California,960072,36385,11.72
+2015,19,Fresno,California,968889,38296,10.24
+2016,19,Fresno,California,976231,39072,9.53
+2017,19,Fresno,California,984726,39600,8.58
+2018,19,Fresno,California,991298,40606,7.56
+2019,19,Fresno,California,997847,42622,7.29
+2020,19,Fresno,California,1009503,48095,11.66
+2021,19,Fresno,California,1012992,51692,9.14
+2022,19,Fresno,California,1015190,50549,6.37
+2008,21,Glenn,California,28063,29994,10.53
+2009,21,Glenn,California,28152,30925,14.72
+2010,21,Glenn,California,28125,32112,15.8
+2011,21,Glenn,California,28131,34053,15.78
+2012,21,Glenn,California,27836,34953,14.41
+2013,21,Glenn,California,27784,37911,12.25
+2014,21,Glenn,California,27802,36446,10.78
+2015,21,Glenn,California,27723,38924,8.78
+2016,21,Glenn,California,27796,40126,8.37
+2017,21,Glenn,California,27876,40428,7.52
+2018,21,Glenn,California,27899,42536,6.6
+2019,21,Glenn,California,28445,43128,6.18
+2020,21,Glenn,California,28896,49494,9.01
+2021,21,Glenn,California,28664,52251,7.02
+2022,21,Glenn,California,28339,51055,5.34
+2008,23,Humboldt,California,128724,32816,7.31
+2009,23,Humboldt,California,129349,33085,11.15
+2010,23,Humboldt,California,135010,35490,10.78
+2011,23,Humboldt,California,135257,35892,10.71
+2012,23,Humboldt,California,134597,36182,9.73
+2013,23,Humboldt,California,134447,36739,8.22
+2014,23,Humboldt,California,134556,38324,6.77
+2015,23,Humboldt,California,135177,40594,5.63
+2016,23,Humboldt,California,136477,41584,4.95
+2017,23,Humboldt,California,136710,42818,4.25
+2018,23,Humboldt,California,136502,43823,3.63
+2019,23,Humboldt,California,135839,45844,3.64
+2020,23,Humboldt,California,136261,50271,8.59
+2021,23,Humboldt,California,134836,54214,6.32
+2022,23,Humboldt,California,135010,54043,3.98
+2008,25,Imperial,California,163180,28108,22.46
+2009,25,Imperial,California,166629,27867,28.27
+2010,25,Imperial,California,174704,29124,29.39
+2011,25,Imperial,California,175731,31225,29.26
+2012,25,Imperial,California,176487,31428,27.72
+2013,25,Imperial,California,176301,32627,25.28
+2014,25,Imperial,California,177786,33758,24.26
+2015,25,Imperial,California,178701,36121,24.59
+2016,25,Imperial,California,179881,35252,24.18
+2017,25,Imperial,California,181250,35585,19.67
+2018,25,Imperial,California,181062,35217,18.77
+2019,25,Imperial,California,180439,37511,20.64
+2020,25,Imperial,California,179595,45565,22.56
+2021,25,Imperial,California,179215,48228,17.46
+2022,25,Imperial,California,178713,45188,14.63
+2008,27,Inyo,California,17218,42280,6.62
+2009,27,Inyo,California,17310,41363,9.34
+2010,27,Inyo,California,18503,42443,9.96
+2011,27,Inyo,California,18385,43618,9.89
+2012,27,Inyo,California,18344,45319,9.23
+2013,27,Inyo,California,18348,45780,7.93
+2014,27,Inyo,California,18280,48579,6.9
+2015,27,Inyo,California,18097,50961,5.83
+2016,27,Inyo,California,17897,54731,5.29
+2017,27,Inyo,California,17819,56308,4.39
+2018,27,Inyo,California,17894,54870,3.91
+2019,27,Inyo,California,17993,57741,3.57
+2020,27,Inyo,California,19001,59712,8.06
+2021,27,Inyo,California,18927,60944,5.96
+2022,27,Inyo,California,18718,61501,3.7
+2008,29,Kern,California,795921,29194,9.85
+2009,29,Kern,California,804989,28590,14.64
+2010,29,Kern,California,841365,30669,16.03
+2011,29,Kern,California,848651,32141,15.09
+2012,29,Kern,California,854392,33731,13.36
+2013,29,Kern,California,862727,34301,11.88
+2014,29,Kern,California,869837,36164,10.54
+2015,29,Kern,California,876548,36532,10.28
+2016,29,Kern,California,881094,36168,10.42
+2017,29,Kern,California,887316,36574,9.28
+2018,29,Kern,California,893618,37557,8.1
+2019,29,Kern,California,898898,39271,7.83
+2020,29,Kern,California,905828,44490,12.87
+2021,29,Kern,California,912351,46651,9.93
+2022,29,Kern,California,916108,44862,6.94
+2008,31,Kings,California,148283,25479,10.62
+2009,31,Kings,California,148136,24494,14.83
+2010,31,Kings,California,152342,26345,16.53
+2011,31,Kings,California,151779,29308,16.19
+2012,31,Kings,California,150884,28626,15.12
+2013,31,Kings,California,150237,29642,13.59
+2014,31,Kings,California,149373,32810,12.05
+2015,31,Kings,California,149960,32733,10.58
+2016,31,Kings,California,149269,34161,9.98
+2017,31,Kings,California,149542,35395,8.97
+2018,31,Kings,California,151221,35042,7.86
+2019,31,Kings,California,152727,36350,7.93
+2020,31,Kings,California,152790,41185,11.84
+2021,31,Kings,California,152679,43818,9.67
+2022,31,Kings,California,152981,42525,6.99
+2008,33,Lake,California,65102,29594,10.69
+2009,33,Lake,California,65236,29672,15.62
+2010,33,Lake,California,64736,31081,15.46
+2011,33,Lake,California,64258,31444,14.77
+2012,33,Lake,California,63966,32005,12.99
+2013,33,Lake,California,63811,32632,11.06
+2014,33,Lake,California,64056,34201,9.06
+2015,33,Lake,California,64266,35796,7.63
+2016,33,Lake,California,63912,36651,6.75
+2017,33,Lake,California,64132,38201,5.81
+2018,33,Lake,California,64394,38998,5.29
+2019,33,Lake,California,64463,40226,5.11
+2020,33,Lake,California,68195,44016,9.78
+2021,33,Lake,California,68584,46852,7.62
+2022,33,Lake,California,68191,45623,4.95
+2008,35,Lassen,California,34562,26750,9.6
+2009,35,Lassen,California,34478,26202,12.84
+2010,35,Lassen,California,34828,27575,14.39
+2011,35,Lassen,California,34235,28218,13.77
+2012,35,Lassen,California,33622,28086,12.7
+2013,35,Lassen,California,32128,28498,10.75
+2014,35,Lassen,California,31664,29488,9.21
+2015,35,Lassen,California,31256,31092,7.28
+2016,35,Lassen,California,30715,32336,6.95
+2017,35,Lassen,California,30919,32154,5.58
+2018,35,Lassen,California,30658,32629,4.83
+2019,35,Lassen,California,30694,32755,4.65
+2020,35,Lassen,California,32317,38061,7.39
+2021,35,Lassen,California,31813,41151,6.08
+2022,35,Lassen,California,29904,40700,4.47
+2008,37,Los Angeles,California,9771522,42732,7.51
+2009,37,Los Angeles,California,9831945,41229,11.74
+2010,37,Los Angeles,California,9821647,42794,12.58
+2011,37,Los Angeles,California,9873700,45439,12.22
+2012,37,Los Angeles,California,9931394,48075,10.99
+2013,37,Los Angeles,California,9987189,47541,9.78
+2014,37,Los Angeles,California,10033449,50052,8.23
+2015,37,Los Angeles,California,10077263,53067,6.68
+2016,37,Los Angeles,California,10094865,54750,5.33
+2017,37,Los Angeles,California,10092365,56635,4.81
+2018,37,Los Angeles,California,10061533,59004,4.65
+2019,37,Los Angeles,California,10011602,62573,4.48
+2020,37,Los Angeles,California,9992236,67383,12.4
+2021,37,Los Angeles,California,9811842,73385,8.93
+2022,37,Los Angeles,California,9721138,74142,4.92
+2008,39,Madera,California,147739,26478,9.51
+2009,39,Madera,California,148606,25595,13.93
+2010,39,Madera,California,151006,28121,17.02
+2011,39,Madera,California,151685,29341,16.44
+2012,39,Madera,California,151520,30904,14.67
+2013,39,Madera,California,151295,32072,12.73
+2014,39,Madera,California,153357,33801,11.31
+2015,39,Madera,California,153448,34323,10.57
+2016,39,Madera,California,153694,35931,9.28
+2017,39,Madera,California,155079,36871,8.17
+2018,39,Madera,California,156373,37414,7.1
+2019,39,Madera,California,156717,39040,6.93
+2020,39,Madera,California,156343,44394,11.15
+2021,39,Madera,California,158910,47533,8.8
+2022,39,Madera,California,160256,46406,6.13
+2008,41,Marin,California,248028,89322,4.72
+2009,41,Marin,California,250521,81770,7.85
+2010,41,Marin,California,252906,83247,8.06
+2011,41,Marin,California,255380,89206,7.4
+2012,41,Marin,California,256087,94993,6.39
+2013,41,Marin,California,258441,95473,5.23
+2014,41,Marin,California,260403,102032,4.33
+2015,41,Marin,California,260974,109274,3.57
+2016,41,Marin,California,260722,113226,3.28
+2017,41,Marin,California,259975,119063,2.9
+2018,41,Marin,California,260091,128091,2.43
+2019,41,Marin,California,259085,136460,2.33
+2020,41,Marin,California,261282,144658,6.88
+2021,41,Marin,California,259162,165673,4.54
+2022,41,Marin,California,256018,171177,2.65
+2008,43,Mariposa,California,17954,34105,7.62
+2009,43,Mariposa,California,17701,34556,10.8
+2010,43,Mariposa,California,18302,36244,13.37
+2011,43,Mariposa,California,18199,36741,13.48
+2012,43,Mariposa,California,17912,37665,12.54
+2013,43,Mariposa,California,17840,38320,10.78
+2014,43,Mariposa,California,17745,40809,9.02
+2015,43,Mariposa,California,17653,43701,7.27
+2016,43,Mariposa,California,17498,46915,6.93
+2017,43,Mariposa,California,17461,49097,5.97
+2018,43,Mariposa,California,17361,51043,5.37
+2019,43,Mariposa,California,17117,53859,4.63
+2020,43,Mariposa,California,17118,57215,11.17
+2021,43,Mariposa,California,17107,60584,8.06
+2022,43,Mariposa,California,17020,61230,4.53
+2008,45,Mendocino,California,85787,34438,6.94
+2009,45,Mendocino,California,85871,34822,10.48
+2010,45,Mendocino,California,87796,37858,11.86
+2011,45,Mendocino,California,87335,37658,11.58
+2012,45,Mendocino,California,87293,37262,10.21
+2013,45,Mendocino,California,87070,37882,8.47
+2014,45,Mendocino,California,87247,40074,7.09
+2015,45,Mendocino,California,87131,41701,5.87
+2016,45,Mendocino,California,87319,42497,5.29
+2017,45,Mendocino,California,87690,43743,4.53
+2018,45,Mendocino,California,87549,45250,4.01
+2019,45,Mendocino,California,86932,47131,4.01
+2020,45,Mendocino,California,91361,52477,9.13
+2021,45,Mendocino,California,91003,56701,6.31
+2022,45,Mendocino,California,89783,57310,4.12
+2008,47,Merced,California,244481,26809,12.66
+2009,47,Merced,California,245560,26855,17.28
+2010,47,Merced,California,256709,27985,18.39
+2011,47,Merced,California,259249,29817,17.95
+2012,47,Merced,California,260776,30248,16.59
+2013,47,Merced,California,261888,31492,14.67
+2014,47,Merced,California,264241,34240,12.98
+2015,47,Merced,California,266133,35167,11.43
+2016,47,Merced,California,267370,35626,10.6
+2017,47,Merced,California,270837,36405,9.44
+2018,47,Merced,California,273733,36820,8.4
+2019,47,Merced,California,277114,38355,8.15
+2020,47,Merced,California,281814,44163,12.51
+2021,47,Merced,California,284458,47574,10.33
+2022,47,Merced,California,290014,46188,7.68
+2008,49,Modoc,California,9084,33033,9.77
+2009,49,Modoc,California,9125,34678,12.7
+2010,49,Modoc,California,9698,35092,15.54
+2011,49,Modoc,California,9513,36359,16.27
+2012,49,Modoc,California,9358,36311,14.68
+2013,49,Modoc,California,9154,37643,12.45
+2014,49,Modoc,California,9078,40683,10.42
+2015,49,Modoc,California,9064,42461,8.66
+2016,49,Modoc,California,8957,43145,7.87
+2017,49,Modoc,California,8864,43305,8.2
+2018,49,Modoc,California,8816,43751,7.62
+2019,49,Modoc,California,8866,46410,7.2
+2020,49,Modoc,California,8663,53072,8.79
+2021,49,Modoc,California,8571,55646,7.22
+2022,49,Modoc,California,8511,56559,5.49
+2008,51,Mono,California,12838,39089,6.02
+2009,51,Mono,California,12851,38355,9.26
+2010,51,Mono,California,14256,40528,10.49
+2011,51,Mono,California,14424,41168,10.33
+2012,51,Mono,California,14328,40329,10.52
+2013,51,Mono,California,14064,41157,8.63
+2014,51,Mono,California,14130,42683,7.14
+2015,51,Mono,California,14074,44056,6.2
+2016,51,Mono,California,14256,45291,5.4
+2017,51,Mono,California,14333,51037,4.47
+2018,51,Mono,California,14400,49783,4.07
+2019,51,Mono,California,14450,54863,3.72
+2020,51,Mono,California,13226,60401,12.69
+2021,51,Mono,California,13261,62909,6.88
+2022,51,Mono,California,12978,65296,3.75
+2008,53,Monterey,California,404840,40435,8.54
+2009,53,Monterey,California,409069,40094,12.07
+2010,53,Monterey,California,416358,41004,13.14
+2011,53,Monterey,California,420379,41452,12.98
+2012,53,Monterey,California,424222,42873,11.85
+2013,53,Monterey,California,426163,44355,10.53
+2014,53,Monterey,California,427985,46374,9.24
+2015,53,Monterey,California,430178,49757,8.26
+2016,53,Monterey,California,433436,50839,7.77
+2017,53,Monterey,California,433803,51861,7.32
+2018,53,Monterey,California,433359,52346,6.43
+2019,53,Monterey,California,433380,55483,6.38
+2020,53,Monterey,California,438390,60216,11.13
+2021,53,Monterey,California,437249,64799,8.35
+2022,53,Monterey,California,432858,65123,6
+2008,55,Napa,California,133624,47212,5.13
+2009,55,Napa,California,134614,46041,8.72
+2010,55,Napa,California,136752,46720,10.58
+2011,55,Napa,California,137668,48198,9.97
+2012,55,Napa,California,138504,52821,8.61
+2013,55,Napa,California,139522,54298,7.02
+2014,55,Napa,California,140331,58241,5.77
+2015,55,Napa,California,140766,62781,4.65
+2016,55,Napa,California,140778,66405,4.31
+2017,55,Napa,California,139818,68063,3.67
+2018,55,Napa,California,138620,69010,2.97
+2019,55,Napa,California,137678,73195,2.89
+2020,55,Napa,California,137485,81905,9.01
+2021,55,Napa,California,136206,87422,6.09
+2022,55,Napa,California,134300,86863,3.23
+2008,57,Nevada,California,97399,43798,6.61
+2009,57,Nevada,California,97721,43670,10.72
+2010,57,Nevada,California,98795,45650,11.99
+2011,57,Nevada,California,98716,47210,11.29
+2012,57,Nevada,California,98165,48696,9.91
+2013,57,Nevada,California,97969,49191,8.21
+2014,57,Nevada,California,98605,51373,6.63
+2015,57,Nevada,California,98716,53134,5.46
+2016,57,Nevada,California,98939,55382,4.8
+2017,57,Nevada,California,99421,56004,4.14
+2018,57,Nevada,California,99472,57335,3.52
+2019,57,Nevada,California,99648,60451,3.37
+2020,57,Nevada,California,102249,66471,8.22
+2021,57,Nevada,California,103457,70883,5.67
+2022,57,Nevada,California,102293,72759,3.44
+2008,59,Orange,California,2988541,49571,5.32
+2009,59,Orange,California,3023265,46192,9.05
+2010,59,Orange,California,3016376,48646,10
+2011,59,Orange,California,3050199,51265,9.26
+2012,59,Orange,California,3078710,54321,8.03
+2013,59,Orange,California,3105262,53545,6.68
+2014,59,Orange,California,3126523,55461,5.56
+2015,59,Orange,California,3148952,59242,4.52
+2016,59,Orange,California,3164277,61188,4.04
+2017,59,Orange,California,3174159,63513,3.53
+2018,59,Orange,California,3175579,66058,2.96
+2019,59,Orange,California,3170851,69590,2.82
+2020,59,Orange,California,3185516,75572,8.99
+2021,59,Orange,California,3161005,81567,5.99
+2022,59,Orange,California,3151184,83553,3.16
+2008,61,Placer,California,340254,47800,6.51
+2009,61,Placer,California,346986,46208,10.63
+2010,61,Placer,California,350007,47680,11.86
+2011,61,Placer,California,356323,49609,11.04
+2012,61,Placer,California,360269,52292,9.52
+2013,61,Placer,California,365415,52942,7.82
+2014,61,Placer,California,369241,55204,6.33
+2015,61,Placer,California,372870,58519,5.1
+2016,61,Placer,California,379046,60591,4.48
+2017,61,Placer,California,385348,62803,3.89
+2018,61,Placer,California,392735,64803,3.21
+2019,61,Placer,California,398918,67647,3.13
+2020,61,Placer,California,405889,74046,7.48
+2021,61,Placer,California,412789,79711,5.08
+2022,61,Placer,California,417772,81791,3.07
+2008,63,Plumas,California,20323,37198,10.73
+2009,63,Plumas,California,20081,37641,16.1
+2010,63,Plumas,California,19915,39409,18.78
+2011,63,Plumas,California,19720,39560,17.93
+2012,63,Plumas,California,19380,39094,16.48
+2013,63,Plumas,California,18901,40346,14.09
+2014,63,Plumas,California,18631,42932,11.77
+2015,63,Plumas,California,18435,44091,10.42
+2016,63,Plumas,California,18691,44612,9.85
+2017,63,Plumas,California,18680,45975,9.04
+2018,63,Plumas,California,18830,47601,7.68
+2019,63,Plumas,California,19052,49448,7.84
+2020,63,Plumas,California,19749,54643,11.06
+2021,63,Plumas,California,19940,58692,9.47
+2022,63,Plumas,California,19351,59387,6.59
+2008,65,Riverside,California,2087348,31615,8.59
+2009,65,Riverside,California,2121839,30615,13.64
+2010,65,Riverside,California,2201562,30970,14.19
+2011,65,Riverside,California,2233840,32420,13.4
+2012,65,Riverside,California,2260763,32828,11.82
+2013,65,Riverside,California,2286087,33565,10.02
+2014,65,Riverside,California,2315238,34786,8.3
+2015,65,Riverside,California,2344648,36590,6.73
+2016,65,Riverside,California,2378282,38050,6.13
+2017,65,Riverside,California,2413058,39060,5.29
+2018,65,Riverside,California,2443221,40582,4.43
+2019,65,Riverside,California,2465569,43073,4.22
+2020,65,Riverside,California,2422847,48265,10.1
+2021,65,Riverside,California,2453178,51468,7.34
+2022,65,Riverside,California,2473902,51415,4.17
+2008,67,Sacramento,California,1386082,39055,7.24
+2009,67,Sacramento,California,1399663,37892,11.48
+2010,67,Sacramento,California,1421381,38280,12.91
+2011,67,Sacramento,California,1433712,39655,12.33
+2012,67,Sacramento,California,1444819,40623,10.68
+2013,67,Sacramento,California,1457283,41581,8.99
+2014,67,Sacramento,California,1474828,43469,7.38
+2015,67,Sacramento,California,1493547,45866,6.03
+2016,67,Sacramento,California,1511401,46904,5.43
+2017,67,Sacramento,California,1527984,48299,4.7
+2018,67,Sacramento,California,1539550,50314,3.88
+2019,67,Sacramento,California,1551660,52561,3.71
+2020,67,Sacramento,California,1586465,57243,9.47
+2021,67,Sacramento,California,1588106,61775,6.93
+2022,67,Sacramento,California,1584169,61558,3.92
+2008,69,San Benito,California,54735,36718,9.68
+2009,69,San Benito,California,54980,35974,14.5
+2010,69,San Benito,California,55544,35929,15.48
+2011,69,San Benito,California,56094,36937,14.78
+2012,69,San Benito,California,56704,37878,13.26
+2013,69,San Benito,California,57320,39293,11.24
+2014,69,San Benito,California,57891,40388,9.44
+2015,69,San Benito,California,58276,44028,7.61
+2016,69,San Benito,California,59270,46235,6.7
+2017,69,San Benito,California,60190,48563,5.81
+2018,69,San Benito,California,61415,50108,5.08
+2019,69,San Benito,California,62803,53993,4.98
+2020,69,San Benito,California,64521,59893,9.87
+2021,69,San Benito,California,66675,62148,7.29
+2022,69,San Benito,California,67579,61693,5.02
+2008,71,San Bernardino,California,2001225,29963,8.04
+2009,71,San Bernardino,California,2011728,28955,13.18
+2010,71,San Bernardino,California,2040803,29436,13.86
+2011,71,San Bernardino,California,2060596,30773,13.08
+2012,71,San Bernardino,California,2073088,31261,11.58
+2013,71,San Bernardino,California,2082101,31889,9.89
+2014,71,San Bernardino,California,2098346,33381,8.09
+2015,71,San Bernardino,California,2114352,35179,6.49
+2016,71,San Bernardino,California,2130726,36422,5.78
+2017,71,San Bernardino,California,2149847,37311,4.96
+2018,71,San Bernardino,California,2165627,38663,4.11
+2019,71,San Bernardino,California,2177279,41079,3.87
+2020,71,San Bernardino,California,2183239,45968,9.66
+2021,71,San Bernardino,California,2192882,49570,7.44
+2022,71,San Bernardino,California,2193656,49270,4.08
+2008,73,San Diego,California,3003793,44776,6.04
+2009,73,San Diego,California,3037115,42884,9.81
+2010,73,San Diego,California,3103260,43889,11.03
+2011,73,San Diego,California,3137236,46113,10.52
+2012,73,San Diego,California,3175148,47700,9.28
+2013,73,San Diego,California,3210788,48645,7.94
+2014,73,San Diego,California,3249307,50915,6.52
+2015,73,San Diego,California,3280825,53357,5.24
+2016,73,San Diego,California,3305462,55074,4.74
+2017,73,San Diego,California,3319019,56969,4.06
+2018,73,San Diego,California,3332483,59014,3.37
+2019,73,San Diego,California,3330459,62034,3.25
+2020,73,San Diego,California,3296045,67536,9.44
+2021,73,San Diego,California,3274954,73350,6.47
+2022,73,San Diego,California,3276208,74326,3.45
+2008,75,San Francisco,California,807904,74712,5.27
+2009,75,San Francisco,California,815184,71500,9.08
+2010,75,San Francisco,California,805519,75267,9.09
+2011,75,San Francisco,California,815694,79899,8.17
+2012,75,San Francisco,California,828963,86583,6.9
+2013,75,San Francisco,California,839695,87302,5.53
+2014,75,San Francisco,California,850918,96047,4.43
+2015,75,San Francisco,California,863237,103625,3.68
+2016,75,San Francisco,California,871343,110451,3.3
+2017,75,San Francisco,California,877471,117290,2.95
+2018,75,San Francisco,California,879676,126940,2.4
+2019,75,San Francisco,California,878826,127173,2.21
+2020,75,San Francisco,California,870393,134758,8
+2021,75,San Francisco,California,811253,159968,5.09
+2022,75,San Francisco,California,808437,155819,2.55
+2008,77,San Joaquin,California,668022,32003,10.45
+2009,77,San Joaquin,California,673795,31955,15.54
+2010,77,San Joaquin,California,687115,32597,16.92
+2011,77,San Joaquin,California,694265,32947,16.47
+2012,77,San Joaquin,California,699444,33631,14.59
+2013,77,San Joaquin,California,701831,34791,12.47
+2014,77,San Joaquin,California,711296,36290,10.64
+2015,77,San Joaquin,California,721919,38463,8.94
+2016,77,San Joaquin,California,732662,39777,8.14
+2017,77,San Joaquin,California,743286,40888,7.04
+2018,77,San Joaquin,California,752590,42320,6.11
+2019,77,San Joaquin,California,761571,45239,5.94
+2020,77,San Joaquin,California,780558,51317,11.5
+2021,77,San Joaquin,California,788140,55827,8.61
+2022,77,San Joaquin,California,793229,54183,5.25
+2008,79,San Luis Obispo,California,264933,39504,5.8
+2009,79,San Luis Obispo,California,266566,39021,9.21
+2010,79,San Luis Obispo,California,269800,40064,10.23
+2011,79,San Luis Obispo,California,271056,42219,9.72
+2012,79,San Luis Obispo,California,274174,43666,8.37
+2013,79,San Luis Obispo,California,275713,44771,6.91
+2014,79,San Luis Obispo,California,278271,47054,5.64
+2015,79,San Luis Obispo,California,280138,49914,4.77
+2016,79,San Luis Obispo,California,281884,51118,4.33
+2017,79,San Luis Obispo,California,282473,53626,3.62
+2018,79,San Luis Obispo,California,283250,55473,3.01
+2019,79,San Luis Obispo,California,282728,58963,2.89
+2020,79,San Luis Obispo,California,281879,63024,7.88
+2021,79,San Luis Obispo,California,279298,68717,5.33
+2022,79,San Luis Obispo,California,282013,67951,3.03
+2008,81,San Mateo,California,707459,74407,4.89
+2009,81,San Mateo,California,717891,71230,8.58
+2010,81,San Mateo,California,719948,73095,8.56
+2011,81,San Mateo,California,728945,78684,7.66
+2012,81,San Mateo,California,739700,86408,6.5
+2013,81,San Mateo,California,749131,85557,5.33
+2014,81,San Mateo,California,757653,90760,4.27
+2015,81,San Mateo,California,765479,99076,3.45
+2016,81,San Mateo,California,767928,103798,3.07
+2017,81,San Mateo,California,768658,114013,2.74
+2018,81,San Mateo,California,768410,123303,2.25
+2019,81,San Mateo,California,764810,128875,2.07
+2020,81,San Mateo,California,762511,141882,7
+2021,81,San Mateo,California,739060,174668,4.64
+2022,81,San Mateo,California,729181,175070,2.4
+2008,83,Santa Barbara,California,402920,45037,5.49
+2009,83,Santa Barbara,California,405847,43923,8.6
+2010,83,Santa Barbara,California,424218,45155,9.94
+2011,83,Santa Barbara,California,425404,47840,9.55
+2012,83,Santa Barbara,California,429635,49987,8.54
+2013,83,Santa Barbara,California,434503,49091,7.3
+2014,83,Santa Barbara,California,438921,51447,6.19
+2015,83,Santa Barbara,California,442051,54318,5.33
+2016,83,Santa Barbara,California,444112,54873,5.08
+2017,83,Santa Barbara,California,444998,57012,4.56
+2018,83,Santa Barbara,California,445137,59649,3.96
+2019,83,Santa Barbara,California,445464,62306,3.63
+2020,83,Santa Barbara,California,448244,68801,8.17
+2021,83,Santa Barbara,California,437434,76910,5.8
+2022,83,Santa Barbara,California,443837,75720,3.53
+2008,85,Santa Clara,California,1755961,60928,6.03
+2009,85,Santa Clara,California,1782913,56816,11.03
+2010,85,Santa Clara,California,1786001,60863,10.66
+2011,85,Santa Clara,California,1811891,65684,9.48
+2012,85,Santa Clara,California,1837605,71690,7.99
+2013,85,Santa Clara,California,1866050,71593,6.54
+2014,85,Santa Clara,California,1891286,77059,5.2
+2015,85,Santa Clara,California,1915736,83773,4.19
+2016,85,Santa Clara,California,1928144,90105,3.78
+2017,85,Santa Clara,California,1932251,97652,3.23
+2018,85,Santa Clara,California,1931985,106567,2.64
+2019,85,Santa Clara,California,1922411,112459,2.51
+2020,85,Santa Clara,California,1931026,124637,7.17
+2021,85,Santa Clara,California,1886595,144552,4.81
+2022,85,Santa Clara,California,1870945,144399,2.66
+2008,87,Santa Cruz,California,252673,46666,7.4
+2009,87,Santa Cruz,California,255671,45308,11.56
+2010,87,Santa Cruz,California,263174,48843,13.65
+2011,87,Santa Cruz,California,264927,49290,13.32
+2012,87,Santa Cruz,California,266391,51725,12.05
+2013,87,Santa Cruz,California,268836,52252,10.42
+2014,87,Santa Cruz,California,270863,54072,8.86
+2015,87,Santa Cruz,California,273495,56902,7.53
+2016,87,Santa Cruz,California,274476,58504,6.99
+2017,87,Santa Cruz,California,274865,62065,5.74
+2018,87,Santa Cruz,California,273713,64845,5
+2019,87,Santa Cruz,California,272870,69302,4.92
+2020,87,Santa Cruz,California,270462,78299,9.73
+2021,87,Santa Cruz,California,260495,88997,6.94
+2022,87,Santa Cruz,California,264370,86365,4.77
+2008,89,Shasta,California,180450,32669,10.08
+2009,89,Shasta,California,180901,33096,14.92
+2010,89,Shasta,California,177277,34493,17.18
+2011,89,Shasta,California,177613,34982,16.21
+2012,89,Shasta,California,177908,35512,14.41
+2013,89,Shasta,California,178447,35799,11.96
+2014,89,Shasta,California,178904,37909,9.73
+2015,89,Shasta,California,178386,40252,7.82
+2016,89,Shasta,California,178592,41305,7
+2017,89,Shasta,California,179403,42714,5.84
+2018,89,Shasta,California,179666,43843,5.02
+2019,89,Shasta,California,179645,45744,4.78
+2020,89,Shasta,California,181984,51246,8.93
+2021,89,Shasta,California,181981,54546,6.9
+2022,89,Shasta,California,180930,54120,4.59
+2008,91,Sierra,California,3250,28172,10.68
+2009,91,Sierra,California,3176,29909,15.56
+2010,91,Sierra,California,3220,31945,15.79
+2011,91,Sierra,California,3100,33655,15.16
+2012,91,Sierra,California,3068,35047,14.63
+2013,91,Sierra,California,3031,35366,12.94
+2014,91,Sierra,California,2976,37111,10.2
+2015,91,Sierra,California,2990,36501,8.8
+2016,91,Sierra,California,2956,37831,7.63
+2017,91,Sierra,California,3008,38612,6.57
+2018,91,Sierra,California,2961,39756,6.07
+2019,91,Sierra,California,2959,41733,5.43
+2020,91,Sierra,California,3228,45192,8.33
+2021,91,Sierra,California,3295,46767,6.13
+2022,91,Sierra,California,3217,47877,4.17
+2008,93,Siskiyou,California,44502,31663,10.28
+2009,93,Siskiyou,California,44489,30695,14.85
+2010,93,Siskiyou,California,44941,31805,17.25
+2011,93,Siskiyou,California,44622,33248,17.28
+2012,93,Siskiyou,California,44091,33571,15.86
+2013,93,Siskiyou,California,43550,34302,13.32
+2014,93,Siskiyou,California,43357,36561,11.26
+2015,93,Siskiyou,California,43275,39585,9.43
+2016,93,Siskiyou,California,43402,40621,8.56
+2017,93,Siskiyou,California,43647,41411,7.32
+2018,93,Siskiyou,California,43624,42268,6.77
+2019,93,Siskiyou,California,43663,43420,6.55
+2020,93,Siskiyou,California,43991,49301,10.05
+2021,93,Siskiyou,California,44026,52474,8.13
+2022,93,Siskiyou,California,43660,51788,5.73
+2008,95,Solano,California,404838,38004,6.92
+2009,95,Solano,California,405670,37518,10.83
+2010,95,Solano,California,413963,37656,12.85
+2011,95,Solano,California,416325,38635,12.38
+2012,95,Solano,California,419645,38975,10.85
+2013,95,Solano,California,423634,40025,9.18
+2014,95,Solano,California,428971,41195,7.63
+2015,95,Solano,California,433378,43597,6.17
+2016,95,Solano,California,438834,45447,5.51
+2017,95,Solano,California,443554,46644,4.8
+2018,95,Solano,California,445931,48566,3.96
+2019,95,Solano,California,447434,51540,3.82
+2020,95,Solano,California,452698,57029,9.8
+2021,95,Solano,California,450350,59873,7.42
+2022,95,Solano,California,448747,58273,4.21
+2008,97,Sonoma,California,465847,43214,5.78
+2009,97,Sonoma,California,471349,41550,9.81
+2010,97,Sonoma,California,484675,42813,11.08
+2011,97,Sonoma,California,487231,44462,10.39
+2012,97,Sonoma,California,489784,46251,9.01
+2013,97,Sonoma,California,493870,47527,7.2
+2014,97,Sonoma,California,498317,49836,5.68
+2015,97,Sonoma,California,500598,53594,4.51
+2016,97,Sonoma,California,502445,55513,4
+2017,97,Sonoma,California,502203,57858,3.4
+2018,97,Sonoma,California,497221,61066,2.79
+2019,97,Sonoma,California,492318,65804,2.7
+2020,97,Sonoma,California,488281,71866,8.11
+2021,97,Sonoma,California,484315,78558,5.56
+2022,97,Sonoma,California,482650,77900,3.13
+2008,99,Stanislaus,California,506232,31076,11.11
+2009,99,Stanislaus,California,508551,30583,16.14
+2010,99,Stanislaus,California,515137,31909,17.31
+2011,99,Stanislaus,California,517515,32860,16.79
+2012,99,Stanislaus,California,520336,33794,15.13
+2013,99,Stanislaus,California,523313,34382,13.11
+2014,99,Stanislaus,California,527814,36753,11.3
+2015,99,Stanislaus,California,532954,39006,9.55
+2016,99,Stanislaus,California,538986,39780,8.63
+2017,99,Stanislaus,California,544494,40592,7.53
+2018,99,Stanislaus,California,547855,41452,6.47
+2019,99,Stanislaus,California,549761,43396,6.1
+2020,99,Stanislaus,California,553217,48532,10.99
+2021,99,Stanislaus,California,552851,52130,8.32
+2022,99,Stanislaus,California,551275,51015,5.44
+2008,101,Sutter,California,92051,34076,12.38
+2009,101,Sutter,California,92355,34369,17.12
+2010,101,Sutter,California,94742,34433,18.79
+2011,101,Sutter,California,94466,35304,18.47
+2012,101,Sutter,California,94153,34985,17.04
+2013,101,Sutter,California,94457,36468,14.78
+2014,101,Sutter,California,94721,36688,12.79
+2015,101,Sutter,California,95224,39130,10.76
+2016,101,Sutter,California,95769,39983,9.74
+2017,101,Sutter,California,96161,40348,8.79
+2018,101,Sutter,California,96348,42184,7.64
+2019,101,Sutter,California,96910,43868,7.43
+2020,101,Sutter,California,99464,49536,11.33
+2021,101,Sutter,California,99038,53408,8.96
+2022,101,Sutter,California,98503,52005,6.57
+2008,103,Tehama,California,61073,26953,9.24
+2009,103,Tehama,California,61137,27719,14.2
+2010,103,Tehama,California,63562,28725,15.78
+2011,103,Tehama,California,63337,29964,15.24
+2012,103,Tehama,California,63213,31293,13.97
+2013,103,Tehama,California,62878,31594,11.77
+2014,103,Tehama,California,62797,33917,9.73
+2015,103,Tehama,California,63150,35500,7.95
+2016,103,Tehama,California,63468,36008,7.16
+2017,103,Tehama,California,63827,37997,6.42
+2018,103,Tehama,California,63904,38783,5.74
+2019,103,Tehama,California,65186,40081,5.65
+2020,103,Tehama,California,65682,44883,9.11
+2021,103,Tehama,California,65380,47750,7.19
+2022,103,Tehama,California,65245,47315,4.86
+2008,105,Trinity,California,13952,26170,12.89
+2009,105,Trinity,California,14109,26654,17.49
+2010,105,Trinity,California,13755,27821,17.44
+2011,105,Trinity,California,13685,27311,17.01
+2012,105,Trinity,California,13494,26857,14.91
+2013,105,Trinity,California,13427,26688,12.1
+2014,105,Trinity,California,13126,28420,9.63
+2015,105,Trinity,California,13094,29552,7.86
+2016,105,Trinity,California,12827,29722,7.12
+2017,105,Trinity,California,12727,29747,6.27
+2018,105,Trinity,California,12598,30685,5.77
+2019,105,Trinity,California,12337,31634,5.54
+2020,105,Trinity,California,16089,33472,8.24
+2021,105,Trinity,California,16061,35204,6.38
+2022,105,Trinity,California,15781,36314,4.61
+2008,107,Tulare,California,422398,28639,10.86
+2009,107,Tulare,California,429167,27740,15.45
+2010,107,Tulare,California,442953,30109,17.59
+2011,107,Tulare,California,446709,31644,17.4
+2012,107,Tulare,California,449625,31434,16.39
+2013,107,Tulare,California,452259,32017,14.52
+2014,107,Tulare,California,454858,34983,13.27
+2015,107,Tulare,California,456794,35556,11.7
+2016,107,Tulare,California,458991,37125,11.22
+2017,107,Tulare,California,462072,37983,10.52
+2018,107,Tulare,California,464279,38070,9.78
+2019,107,Tulare,California,465751,39834,9.75
+2020,107,Tulare,California,473891,45523,13.41
+2021,107,Tulare,California,476946,48626,10.6
+2022,107,Tulare,California,477544,47295,8.17
+2008,109,Tuolumne,California,55626,32424,8.03
+2009,109,Tuolumne,California,55105,32168,12.68
+2010,109,Tuolumne,California,55164,34579,15.61
+2011,109,Tuolumne,California,54808,35841,14.73
+2012,109,Tuolumne,California,54201,36606,13.17
+2013,109,Tuolumne,California,53975,36116,10.9
+2014,109,Tuolumne,California,53830,38181,8.77
+2015,109,Tuolumne,California,53599,40912,7.08
+2016,109,Tuolumne,California,53729,42373,6.23
+2017,109,Tuolumne,California,53953,43170,5.43
+2018,109,Tuolumne,California,54250,43806,4.66
+2019,109,Tuolumne,California,54290,45926,4.56
+2020,109,Tuolumne,California,55374,49653,10.65
+2021,109,Tuolumne,California,55065,53216,7.27
+2022,109,Tuolumne,California,54531,52806,4.47
+2008,111,Ventura,California,793737,45775,6.32
+2009,111,Ventura,California,801061,44435,10.06
+2010,111,Ventura,California,825144,45947,11.11
+2011,111,Ventura,California,829908,47868,10.43
+2012,111,Ventura,California,833287,49592,9.24
+2013,111,Ventura,California,837729,49787,7.97
+2014,111,Ventura,California,842113,51943,6.73
+2015,111,Ventura,California,845599,54241,5.68
+2016,111,Ventura,California,846921,55756,5.23
+2017,111,Ventura,California,848264,57456,4.53
+2018,111,Ventura,California,847222,59781,3.82
+2019,111,Ventura,California,844203,62886,3.64
+2020,111,Ventura,California,843310,68273,8.79
+2021,111,Ventura,California,839358,74527,6.2
+2022,111,Ventura,California,832605,76375,3.7
+2008,113,Yolo,California,196562,39765,7.43
+2009,113,Yolo,California,199150,39447,11.48
+2010,113,Yolo,California,201061,39970,12.38
+2011,113,Yolo,California,201931,42841,11.98
+2012,113,Yolo,California,204558,43527,10.8
+2013,113,Yolo,California,206267,44581,9.12
+2014,113,Yolo,California,208368,46763,7.62
+2015,113,Yolo,California,211998,49027,6.49
+2016,113,Yolo,California,215569,49918,5.91
+2017,113,Yolo,California,218470,50754,5.15
+2018,113,Yolo,California,220082,52040,4.3
+2019,113,Yolo,California,220019,55226,4.14
+2020,113,Yolo,California,216291,60305,7.82
+2021,113,Yolo,California,213039,66308,5.96
+2022,113,Yolo,California,222115,64279,4.04
+2008,115,Yuba,California,72414,30658,11.95
+2009,115,Yuba,California,72358,30832,17.52
+2010,115,Yuba,California,72345,31375,18.17
+2011,115,Yuba,California,72480,32320,17.25
+2012,115,Yuba,California,72770,32564,15.63
+2013,115,Yuba,California,73082,33459,13.28
+2014,115,Yuba,California,73527,34303,11.33
+2015,115,Yuba,California,74039,36587,9.36
+2016,115,Yuba,California,74920,37593,8.64
+2017,115,Yuba,California,76575,37776,7.47
+2018,115,Yuba,California,77418,39466,6.46
+2019,115,Yuba,California,78549,41285,6.13
+2020,115,Yuba,California,81994,45680,10.67
+2021,115,Yuba,California,83216,49013,8.42
+2022,115,Yuba,California,84310,48204,5.52
