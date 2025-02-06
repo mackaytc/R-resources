@@ -1,0 +1,219 @@
+w---
+title: "`R` Overview: Learning to Speak `R`"
+date: "2023-08-24"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Basic Terminology
+
+Two programs we'll use: 
+
+  * `R` is a statistical programming language 
+  * `RStudio` is an IDE (integrated development environment)
+  
+`RStudio` is _how_ we'll work with `R`. 
+
+
+
+## Base `R` and Packages
+
+`R` has lots of functions included by default 
+
+  * e.g., `mean()`, `lm()`, etc. 
+  * These functions are known as "Base `R`" 
+
+In this class, we'll use several _packages_ like `tidyverse`
+
+  * Packages are collections of functions that aren't in base `R`
+
+Using packages in `R`
+
+  * Install them using the `install()` function (just once)
+  * _Load_ them using the `library()` function. 
+  
+This tells `R`, "I want to use the functions in this package." 
+
+
+
+## Scripts and Running Code in `R`
+
+In this class, we'll general work with `R` scripts 
+
+  * These files will have a `.R` file extension. 
+  * Scripts are collections of `R` code. 
+  
+To run code in an `R` script: 
+
+  * Click on the line of code (or select it with your mouse) 
+  * `Ctrl + Enter` (or `Apple logo / Cmd key + Enter` on Mac)
+
+If you want to run several lines of code at one time, 
+  
+  * Highlight all of the lines you want to run, then run 
+  * You can also use the `Run` button 
+  
+  
+
+## Scripts and the Command Line
+
+The `Console` is one of the four default panels in `Rstudio`
+
+  * You can run code by clicking next to the `>` symbol
+  * Convenient way to test a line of code
+  * Use it to access documentation using "`?`" - e.g, `?mean` 
+  
+\bigskip
+
+__AN IMPORTANT NOTE__
+
+  * When something's important, make sure its saved in a script!
+  * _Don't_ rely on the command line (you'll lose your work)
+
+
+
+## Comments in your Code
+
+An important part of well-written code is _comments_. 
+
+  * Start a line with a hash tag - `#`. 
+  * This tells `R`, "ignore this next line." 
+  
+_Documenting_ your code means explaining what you're doing 
+
+  * Helps other people (and you, later!) understand your code
+  
+\bigskip
+
+```{r, include = TRUE, class.output="bg-warning"}
+# This is a comment - R will ignore this line
+
+2 + 2 
+
+```
+
+
+
+## Basic Data Structures in `R` and the Assignment Operator
+
+`<-` is the _assignment operator_ - use it to create objects
+
+  * Type it using the hot key combination `Alt + -` 
+  * Example code below:
+  
+\bigskip
+  
+```{r} 
+
+# Create object named a storing the value 5...
+
+a <- 5
+
+# Now we can use a in equations, functions, etc.
+
+a + 2
+
+```
+
+
+
+## Object Types in `R`
+
+In `R`, we can create different _types_ of objects, including: 
+
+-   **Numeric**: stores a single value (like `a` stores `5` above)
+-   **Logical**: stores binary values `TRUE` or `FALSE`
+-   **Character**: also known as string objects, these stores strings of text 
+(like "hello world")
+
+\bigskip
+
+Given an object, we can use "`is`" functions to check types 
+
+  * These functions will return either `TRUE` or `FALSE`
+  * Example on next slide
+
+
+
+## Object Types in `R` and the `is` Function
+
+
+```{r Data Types, echo = TRUE}
+
+# Check if a object from above is numeric 
+
+is.numeric(a)
+
+# Now we can create a character object and check it
+
+a.string <- "123 Main St"
+
+is.character(a.string)
+
+```
+
+
+
+## Vectors in `R` 
+
+Vectors are the basic "building blocks" of data in `R`
+
+  * Vectors are collections of items stored together
+  * To create vectors, we'll use the `c()` function 
+
+\bigskip 
+
+```{r}
+
+# Create a vector with 3 elements - note the commas!
+
+b.vector <- c(1, 2, 3)
+
+b.vector
+
+```
+
+
+
+## Dataframes in Base `R`
+
+In Base `R`, data sets are stored as _data frames_ 
+
+  * Data frames are _collections_ of vectors
+
+\bigskip 
+
+```{r}
+
+# Start with vectors storing various object types 
+
+person.ID <- c(12, 24, 54, 65)
+address   <- c("123 Main St", "274 Long St", 
+               "789 Right St", "467 Left St")
+employed  <- c(TRUE, TRUE, FALSE, TRUE)
+wage.inc  <- c(12500, 15750, 0, 14100)
+
+```
+
+
+
+## Dataframes in Base `R`
+
+```{r}
+
+# Combine individual vectors into a data frame
+
+data <- data.frame(person.ID, address, 
+                   employed, wage.inc)
+
+head(data)
+
+```   
+
+
+

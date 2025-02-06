@@ -1,0 +1,217 @@
+---
+title: "`R` Handout Slides: Introduction to `tidyverse`"
+date: "2023-08-24"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Introducing `tidyverse`
+
+`tidyverse` package gives us tools for data cleaning and processing
+
+  * "Base `R`" (and other packages) offers other tools 
+  * We want to use these _specific_ tools for Data Analysis Activities
+
+\bigskip 
+
+Things to remember: 
+
+  * First time you use it on a computer, run `install.packages()`
+  * Include `library(tidyverse)` at start of your `R` scripts
+
+
+
+## Overview
+
+Slides and handout cover following functions: 
+
+-   `select()` - pick out specific columns or variables from your data
+-   `filter()` - pick out specific rows or observations from your data
+-   `arrange()` - reorder or sort rows of your data
+-   `mutate()` - create new variables as functions of existing variables
+-   `summarize()` - creates summary statistics (with `group_by()`)
+
+\medskip 
+
+We'll also talk about piping via `%>%`.  
+
+
+
+## Sample Data Set 
+
+```{r}
+
+person.ID <- c(12, 24, 54, 65)
+address   <- c("123 Main St", "274 Long St", 
+               "789 Right St", "467 Left St")
+employed  <- c(TRUE, TRUE, FALSE, TRUE)
+wage.inc  <- c(12500, 15750, 0, 14100)
+
+sample.data <- data.frame(person.ID, address, 
+                          employed, wage.inc)
+
+sample.data
+
+```
+
+
+
+## Select Columns or Variables using `select()`
+
+```{r}
+# Select person.ID and address from sample.data, 
+# and store as a new data frame named ID.address.data
+
+ID.address.data <- select(sample.data, person.ID, address)
+
+# Print new data frame 
+
+ID.address.data
+
+```
+
+
+
+## Select Rows or Observations using `filter()`
+
+```{r}
+# Keep observation with address of "123 Main St"
+
+filter(sample.data, address == "123 Main St")
+
+# Keep observations with wages greater than 14,000
+
+filter(sample.data, wage.inc > 14000)
+
+```
+
+
+
+
+## Select Rows or Observations using `filter()` Con't
+
+```{r}
+
+# Keep observations using two criteria using the 
+# "&" symbol - this syntax requires that BOTH 
+# conditions be true 
+
+filter(sample.data, employed == TRUE & person.ID < 50)
+
+# Alternatively, return rows that match EITHER 
+# condition using the | symbol (read as "OR")
+
+filter(sample.data, employed == TRUE | person.ID < 50)
+
+```
+
+
+
+## Sorting Data using `arrange()`
+
+```{r}
+# Sort sample.data observations by wage.inc 
+# from smallest to largest
+
+arrange(sample.data, wage.inc)
+
+# You can sort by multiple variables, and 
+# reverse sort using desc() function
+
+```
+
+
+
+## Summarizing Data with `summarize()`
+
+```{r}
+# Use summarize to return a data frame with 
+# average wages. 
+
+summarize(sample.data, mean.wage.inc = mean(wage.inc))
+
+# Handles multiple summary stats easily
+
+summarize(sample.data, 
+          median.wage.inc = median(wage.inc), 
+          pct.10.wage.inc = quantile(wage.inc, 0.1), 
+          pct.90.wage.inc = quantile(wage.inc, 0.9))
+
+```
+
+
+
+## Creating New Variables using `mutate()`
+
+```{r}
+
+# Silly formula just to show what mutate can do
+
+mutate(sample.data, 
+       new.var = log(person.ID)^2 + wage.inc/50)
+
+```
+
+
+
+## Piping with `%>%`
+
+```{r}
+# Two ways of doing the same thing - first consider: 
+
+sample.data <- mutate(sample.data, 
+                      avg.wage.inc = mean(wage.inc))
+
+# Then compare with code below, which does the same 
+# but uses %>% to make things clearer: 
+
+sample.data <- sample.data %>%
+  mutate(avg.wage.inc = mean(wage.inc))
+
+```
+
+
+
+## Piping with `%>%` Continued
+
+```{r}
+# Let's consider another example:
+
+summary.stats.table <- sample.data %>% 
+  mutate(new.var = log(person.ID)^2 + wage.inc/50) %>% 
+  summarize(avg.new.var = mean(new.var))
+
+```
+
+
+
+## Grouping Data with `group_by`
+
+```{r}
+# Calculating average wages grouped by employed 
+# status using group_by()
+
+group.avg.wages <- sample.data %>% 
+  group_by(employed) %>% 
+  summarize(mean.wages = mean(wage.inc))
+
+```
+
+
+
+## Grouping Data with `group_by()` Continued
+
+```{r}
+# Create a new variable using mutate
+
+sample.data <- sample.data %>% 
+  group_by(employed) %>% 
+  mutate(avg.wage = mean(wage.inc))
+
+```
