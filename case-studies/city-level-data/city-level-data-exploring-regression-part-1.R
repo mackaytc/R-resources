@@ -25,7 +25,8 @@
 library(tidyverse)
 
 data.url <- paste0("https://raw.githubusercontent.com/mackaytc/R-resources/", 
-                   "main/data/sample-city-data.csv")
+                   "refs/heads/main/case-studies/city-level-data/", 
+                   "sample-city-data.csv")
 
 sample.city.data <- read_csv(data.url)
 
