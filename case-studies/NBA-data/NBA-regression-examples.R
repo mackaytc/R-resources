@@ -261,6 +261,16 @@ lm(PTS ~ as.factor(Pos) - 1, nba.data) %>% summary()
 
 
 ################################################################################
+# Q6: Interaction Terms
+################################################################################
+
+# Do something around interacting Center with Minutes Played - make sure you 
+# have some setup for this during lecture beforehand!
+
+
+
+
+################################################################################
 # End of Activity
 ################################################################################
 
