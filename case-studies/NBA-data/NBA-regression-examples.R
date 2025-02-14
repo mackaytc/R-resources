@@ -5,8 +5,8 @@
 ################################################################################
 
 # The code below provides several examples of basic regressions using NBA
-# basketball data. Before you get started, make sure to click on the data 
-# set in the environment pane to see how the data set is structured.
+# basketball data. Before you get started, click on the data set in the
+# environment pane to see how the data set is structured.
 
 library(tidyverse)
 
@@ -56,9 +56,10 @@ nba.data <- filter(nba.data, G >= 25 & MP >= 5)
 # Q1: Does playing more minutes per game increase turnovers per game?
 ################################################################################
 
-# Turnovers happen when a player loses the ball and the other team gains gains 
-# possession (they're a bad thing). In the regression below, we ask, "How does
-# the number of minutes you play predict the number of turnovers you have?"
+# Turnovers (TOV in the data set) happen when a player loses the ball and the
+# other team gains possession (turnovers are a bad thing). In the regression
+# below, we ask, "How does the number of minutes you play (MP in the data set)
+# predict the number of turnovers you have?"
 
 q1.model <- lm(TOV ~ MP, data = nba.data)
 
@@ -78,7 +79,7 @@ minutes.for.1.additional.turnover <- 1 / q1.model$coefficients["MP"]
 
 minutes.for.1.additional.turnover
 
-# We can clean up this output a bit by using the round() function to shorten our
+# We can clean up the output above by using the round() function to shorten our
 # minutes value and the unname() function to remove labels makes the output
 # cleaner to read:
 
@@ -94,7 +95,7 @@ round(unname(minutes.for.1.additional.turnover))
 # Q2: Does having a last name starting with A, B, or C make you a better scorer?
 ################################################################################
 
-# Start by creating an indicator variable for players who's names start with 
+# Start by creating an indicator variable for players whose names start with 
 # the letters A through C. 
 
 nba.data <- mutate(nba.data, 
@@ -116,7 +117,7 @@ lm(PTS ~ abc.name, data = nba.data) %>% summary()
 
 confint(lm(PTS ~ abc.name, data = nba.data))
 
-# This interval tells us the range of estimated effects we would like observe 
+# This interval tells us the range of estimated effects we would likely observe 
 # if we were to imagine replaying this season many times (or gathering data 
 # across many seasons). 
 
@@ -137,7 +138,7 @@ lm(TRB ~ ORB, data = nba.data) %>% summary()
 lm(TRB ~ DRB, data = nba.data) %>% summary()
 
 # Notice that in both cases, our coefficients are statistically significant and
-# large in magnitude - each additional offensive and defensive rebounds is
+# large in magnitude - each additional offensive and defensive rebound are
 # associated with an increase of more than 1 total predicted rebounds. Does this
 # mean these are informative regressions? No! 
 
@@ -168,9 +169,9 @@ lm(TRB ~ ORB + DRB, data = nba.data) %>% summary()
 # Q4: What Factors Affect Scoring?
 ################################################################################
 
-# Let's predict points in terms of the number of shots you take (FGA) and the 
-# percentage of shots that you make (eFG% - technically, a weighted average
-# of how you do at different kinds of shots). 
+# Let's predict points in terms of the number of shots you take (FGA) and the
+# percentage of shots that you make (eFG% is effective field percentage, and its
+# technically a weighted average of how you do at different kinds of shots).
 
 q4.model <- lm(PTS ~ FGA + `eFG%`, nba.data) 
 
@@ -201,7 +202,7 @@ q4.model$coefficients["`eFG%`"] / 100
 # Now, this tells us that for each additional percentage point of improvement
 # in our shooting percentage, we expect to score an additional 0.12 points.
 
-# We can double check that using the predict function (note that the check.names
+# We can double-check that using the predict function (note that the check.names
 # option here is included so we can match the % sign in eFG%). 
 
 scoring.eFG.50 <- predict(q4.model, newdata = 
@@ -256,5 +257,15 @@ lm(PTS ~ as.factor(Pos) - 1, nba.data) %>% summary()
 # makes relative comparisons (across positions) while the other makes absolute 
 # comparisons (i.e., tests for differences in predicted values relative to 0 
 # for each position separately).  
+
+
+
+################################################################################
+# End of Activity
+################################################################################
+
+# You don't need to turn anything in after completing this activity (although 
+# you should save this file because it will be helpful later!). 
+
 
 
