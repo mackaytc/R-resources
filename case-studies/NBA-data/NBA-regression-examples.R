@@ -4,8 +4,11 @@
 #
 ################################################################################
 
+# The code below provides several examples of basic regressions using NBA
+# basketball data. Before you get started, make sure to click on the data 
+# set in the environment pane to see how the data set is structured.
+
 library(tidyverse)
-library(ggplot2)
 
 ################################################################################
 # Data Overview
@@ -41,14 +44,6 @@ nba.data <- filter(nba.data, (teams.played.for == 1)        |
 nba.data <- filter(nba.data, G >= 25 & MP >= 5)
 
 ################################################################################
-# Data Visualization - INSERT
-################################################################################
-
-# Do a couple lines of descriptive checks
-
-
-
-################################################################################
 #
 # A Couple of Silly Examples to Start
 #
@@ -61,22 +56,33 @@ nba.data <- filter(nba.data, G >= 25 & MP >= 5)
 # Q1: Does playing more minutes per game increase turnovers per game?
 ################################################################################
 
+# Turnovers happen when a player loses the ball and the other team gains gains 
+# possession (they're a bad thing). In the regression below, we ask, "How does
+# the number of minutes you play predict the number of turnovers you have?"
+
 q1.model <- lm(TOV ~ MP, data = nba.data)
 
 summary(q1.model)
 
-# Putting this in context - given our estimated coefficient, each additional 
-# minute of playing time is associated with 0.07 more turnovers. 
+# Let's put these results in context - given our estimated coefficient on
+# minutes played (MP), each additional minute of playing time is associated 
+# with 0.07 more turnovers.
 
 # How many more minutes would a player need to play to cause one additional
 # turnover? Let's check: 
 
 minutes.for.1.additional.turnover <- 1 / q1.model$coefficients["MP"]
 
-# Using this formula, we expect them to average ~1 additional turnover for each 
-# 14 additional minutes that they play (rounding things to make it easier). 
+# Using this formula, we expect them to average ~1 additional turnover for each
+# 14 additional minutes that they play. 
 
-round(minutes.for.1.additional.turnover)
+minutes.for.1.additional.turnover
+
+# We can clean up this output a bit by using the round() function to shorten our
+# minutes value and the unname() function to remove labels makes the output
+# cleaner to read:
+
+round(unname(minutes.for.1.additional.turnover))
 
 # Note that this is an easier way to interpret this coefficient than using a 1
 # minute change. Remember that you are always free to scale coefficients to make
@@ -145,7 +151,7 @@ lm(TRB ~ ORB + DRB, data = nba.data) %>% summary()
 # matter knowledge to assess things.
 
 # SMALL NOTE: Because of rounding in the averages, offensive and defensive 
-# rebounds don't exactly add up to total rebounds).
+# rebounds don't exactly add up to total rebounds.
 
 
 
@@ -180,7 +186,8 @@ summary(q4.model)
 # by 12" - that's a huge change! 
 
 # To see what's going on - and how we should improve our interpretation - let's
-# look at summary statistics for eFG%:
+# look at summary statistics for eFG% (notice that we use backticks around eFG% 
+# because % is a special character): 
 
 summary(nba.data$`eFG%`)
 
@@ -198,10 +205,10 @@ q4.model$coefficients["`eFG%`"] / 100
 # option here is included so we can match the % sign in eFG%). 
 
 scoring.eFG.50 <- predict(q4.model, newdata = 
-                            data.frame(FGA = 10, `eFG%` = 0.5,check.names = F))
+                            data.frame(FGA = 10, `eFG%` = 0.5, check.names = F))
 
 scoring.eFG.51 <- predict(q4.model, newdata = 
-                            data.frame(FGA = 10, `eFG%` = 0.51,check.names = F))
+                            data.frame(FGA = 10, `eFG%` = 0.51, check.names = F))
 
 # Above, we generated predicted values for a player who takes 10 shots per game
 # and makes 50 and 51 percent of their shots. Now, we can check the difference
@@ -210,6 +217,8 @@ scoring.eFG.51 <- predict(q4.model, newdata =
 scoring.eFG.51 - scoring.eFG.50
 
 # Notice that this difference is exactly equal to our coefficient above!
+
+
 
 ################################################################################
 # Q5: How Does Scoring Vary by Position?
