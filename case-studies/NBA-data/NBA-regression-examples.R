@@ -67,20 +67,39 @@ summary(q1.model)
 
 # Let's put these results in context - given our estimated coefficient on
 # minutes played (MP), each additional minute of playing time is associated 
-# with 0.07 more turnovers.
+# with 0.07 more turnovers (TOV).
 
-# How many more minutes would a player need to play to cause one additional
-# turnover? Let's check: 
+# In practical terms, this might be a bit tricky to interpret - is 0.07 a lot of
+# turnovers or not? Let's experiment with transforming our coefficient. To do
+# this, we can start by seeing how many minutes players tend to play:
+
+quantile(nba.data$MP)
+
+# The median player plays around 22 minutes, with most people playing between 
+# 15 and 30 minutes. Given these ranges, suppose we wanted to know, "If a player
+# plays 10 more minutes, how many more turnovers should we expect?"
+
+# To answer this, all we need to do is multiply our coefficient by 10 (because
+# our coefficient gives us turnovers per minute): 
+
+q1.model$coefficients["MP"] * 10
+
+# Playing 10 more minutes leads to around ~0.7 more turnovers on average. This
+# feels a bit easier to interpret. 
+
+# Can we make things even easier? Suppose we ask, "How many more minutes would a
+# player need to play to cause 1 additional turnover?" To answer this, we need
+# to solve the following equation:
 
 minutes.for.1.additional.turnover <- 1 / q1.model$coefficients["MP"]
 
 # Using this formula, we expect them to average ~1 additional turnover for each
-# 14 additional minutes that they play. 
+# 14 additional minutes that they play:
 
 minutes.for.1.additional.turnover
 
 # We can clean up the output above by using the round() function to shorten our
-# minutes value and the unname() function to remove labels makes the output
+# minutes value and the unname() function to remove labels and make the output
 # cleaner to read:
 
 round(unname(minutes.for.1.additional.turnover))
@@ -92,28 +111,48 @@ round(unname(minutes.for.1.additional.turnover))
 
 
 ################################################################################
-# Q2: Does having a last name starting with A, B, or C make you a better scorer?
+# Q2: Does having a first name starting with A, B, or C affect points scored?
 ################################################################################
 
-# Start by creating an indicator variable for players whose names start with 
-# the letters A through C. 
+# The code below uses the str_detect() function to create a binary indicator
+# variable named abc.name that is equal to 1 for players whose names start with
+# the letters A through C, and 0 for all other players.  
 
 nba.data <- mutate(nba.data, 
-                   abc.name = as.numeric(str_detect(Player, "^[ABC]")))
+                   abc.name = ifelse(str_detect(Player, "^[ABC]"), 1, 0))
 
-table(nba.data$abc.name)
+table(nba.data$abc.name) # Number of players with names starting with A, B, or C
 
-# Then, run a regression to see if these players score more points...
+# With this new variable, we can run the regression below to see if the first
+# letter of your first name matters for points scored (remember, this question
+# is intentionally a bit silly - names shouldn't impact performance!):
 
 lm(PTS ~ abc.name, data = nba.data) %>% summary()
 
-# Having a name starting with A, B, or C is associated with scoring ~0.37 more
-# points per game. Is this a meaningful difference? Intuitively, we should 
-# suspect that this is likely just noise in the data. How can we check?
+# Having a name starting with A, B, or C is associated with scoring ~0.07 fewer
+# points per game. 
 
-# First, note that our coefficient is not statistically significant. This 
-# tells us that the estimated relationship likely just reflects noise in the 
-# data. We can construct a confidence interval for further context: 
+# Using some background knowledge, it's unlikely that someone's name really
+# matters for their performance. Given that, how should we interpret our
+# coefficient? Is it significant?
+
+# The first thing we can do is compare our coefficient to the average number of 
+# points scored: 
+
+mean(nba.data$PTS)
+
+# Relative to the overall average, the magnitude of our coefficient is tiny. We 
+# can refer to this as "practical" or economic significance. In practical terms, 
+# our coefficient is not significant.
+
+# What about statistical significance? First, we can check the stars and
+# p-values on the regression output to see if the coefficient is statistically
+# significant. 
+
+# The large p-value here indicates that our estimated relationship likely just
+# reflects noise in the data. 
+
+# We can construct a confidence interval for further context:
 
 confint(lm(PTS ~ abc.name, data = nba.data))
 
@@ -121,38 +160,10 @@ confint(lm(PTS ~ abc.name, data = nba.data))
 # if we were to imagine replaying this season many times (or gathering data 
 # across many seasons). 
 
-# Note that this interval is very wide compared to the coefficient we observed, 
-# and includes both positive and negative values. This tells us that given 
-# the underlying noise in the data, it is unlikely that there is any meaningful
-# relationship between our outcome and explanatory variables. 
-
-
-
-################################################################################
-# Q3: Do Offensive and Defensive Rebounds Predict Total Rebounds?
-################################################################################
-
-# Let's run each of these regressions separately, then compare results: 
-
-lm(TRB ~ ORB, data = nba.data) %>% summary()
-lm(TRB ~ DRB, data = nba.data) %>% summary()
-
-# Notice that in both cases, our coefficients are statistically significant and
-# large in magnitude - each additional offensive and defensive rebound are
-# associated with an increase of more than 1 total predicted rebounds. Does this
-# mean these are informative regressions? No! 
-
-# To see why, let's add both rebounding categories to our regression: 
-
-lm(TRB ~ ORB + DRB, data = nba.data) %>% summary()
-
-# There are only two types of rebounds, offensive and defensive, so we're
-# looking at a "mechanical" relationship. The important point is that R /
-# regression doesn't "know" that this is the case - we need to apply subject
-# matter knowledge to assess things.
-
-# SMALL NOTE: Because of rounding in the averages, offensive and defensive 
-# rebounds don't exactly add up to total rebounds.
+# This interval is both 1) very wide compared to the coefficient we observed and
+# 2) includes both positive and negative values. This tells us that given the
+# underlying noise in the data, it is unlikely that there is any meaningful
+# relationship between our outcome and explanatory variables.
 
 
 
@@ -166,16 +177,16 @@ lm(TRB ~ ORB + DRB, data = nba.data) %>% summary()
 # comparisons that are a bit more meaningful!
 
 ################################################################################
-# Q4: What Factors Affect Scoring?
+# Q3: What Factors Affect Scoring?
 ################################################################################
 
 # Let's predict points in terms of the number of shots you take (FGA) and the
 # percentage of shots that you make (eFG% is effective field percentage, and its
 # technically a weighted average of how you do at different kinds of shots).
 
-q4.model <- lm(PTS ~ FGA + `eFG%`, nba.data) 
+q3.model <- lm(PTS ~ FGA + `eFG%`, nba.data) 
 
-summary(q4.model)
+summary(q3.model)
 
 # Let's interpret the coefficients on our explanatory variables. The first 
 # coefficient on FGA says for each additional shot you take, your predicted
@@ -197,7 +208,7 @@ summary(nba.data$`eFG%`)
 # eFG% by 1" above, we were really saying, "Increase our shooting percentage 
 # from 0 to 100 percent." Let's put things in terms that make more sense: 
 
-q4.model$coefficients["`eFG%`"] / 100
+q3.model$coefficients["`eFG%`"] / 100
 
 # Now, this tells us that for each additional percentage point of improvement
 # in our shooting percentage, we expect to score an additional 0.12 points.
@@ -205,10 +216,10 @@ q4.model$coefficients["`eFG%`"] / 100
 # We can double-check that using the predict function (note that the check.names
 # option here is included so we can match the % sign in eFG%). 
 
-scoring.eFG.50 <- predict(q4.model, newdata = 
+scoring.eFG.50 <- predict(q3.model, newdata = 
                             data.frame(FGA = 10, `eFG%` = 0.5, check.names = F))
 
-scoring.eFG.51 <- predict(q4.model, newdata = 
+scoring.eFG.51 <- predict(q3.model, newdata = 
                             data.frame(FGA = 10, `eFG%` = 0.51, check.names = F))
 
 # Above, we generated predicted values for a player who takes 10 shots per game
@@ -222,7 +233,7 @@ scoring.eFG.51 - scoring.eFG.50
 
 
 ################################################################################
-# Q5: How Does Scoring Vary by Position?
+# Q4: How Does Scoring Vary by Position?
 ################################################################################
 
 # Let's look at scoring across the five different positions in basketball. To 
@@ -261,7 +272,7 @@ lm(PTS ~ as.factor(Pos) - 1, nba.data) %>% summary()
 
 
 ################################################################################
-# Q6: Binary Variables in Regression Models
+# Q5: Binary Variables in Regression Models
 ################################################################################
 
 # Let's create a binary indicator variable set equal to 1 for players who won
@@ -295,9 +306,9 @@ lm(PTS ~ award.winner, nba.data) %>% summary()
 # how minutes played (MP) and points scored (PTS) affect the probability that 
 # you won an award. 
 
-q6.model <- lm(award.winner ~ PTS + MP, nba.data)
+q5.model <- lm(award.winner ~ PTS + MP, nba.data)
 
-summary(q6.model)
+summary(q5.model)
 
 # When we have a binary outcome variable, our regression tells us how our
 # explanatory variables change the predicted probability that our outcome 
@@ -305,7 +316,7 @@ summary(q6.model)
 
 # Let's look at the coefficient on points: 
 
-q6.model$coefficients["PTS"]
+q5.model$coefficients["PTS"]
 
 # This says that for each additional point that a player scores, the probability
 # that they win an award increases by 4 percentage points (p.p.). You can think
