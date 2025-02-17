@@ -323,10 +323,10 @@ q5.model$coefficients["PTS"]
 # about multiplying the coefficient here by 100 p.p. if it helps - remember that
 # the event (winning an award here) happens if Y = 1, hence the scaling.
 
-# QUESTION: Consider the coefficient on minutes played - does it seem odd that 
-# the coefficient is negative? Remember that we have controlled for points 
-# scored - if we are holding points scored fixed, does it make more sense that
-# minutes is negatively related to the probability of winning an award?
+# QUESTION: Consider the coefficient on minutes played - does it seem odd that
+# the coefficient is negative? Remember that we controlled for points scored.
+# For context, suppose two players both score 20 points. If one does so faster
+# than the other (i.e., in fewer minutes), which player would you say is better?
 
 
 
