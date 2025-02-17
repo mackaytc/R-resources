@@ -261,12 +261,61 @@ lm(PTS ~ as.factor(Pos) - 1, nba.data) %>% summary()
 
 
 ################################################################################
-# Q6: Interaction Terms
+# Q6: Binary Variables in Regression Models
 ################################################################################
 
-# Do something around interacting Center with Minutes Played - make sure you 
-# have some setup for this during lecture beforehand!
+# Let's create a binary indicator variable set equal to 1 for players who won
+# an individual award at the end of the season (awards like MVP, All-NBA, etc. 
+# are handed out to the best players in the league). 
 
+nba.data <- mutate(nba.data, 
+                   award.winner = ifelse(!is.na(Awards), 1, 0))
+
+# The ifelse() function above says, "If you have a non-missing value for Awards, 
+# assign a value of 1 to award.winner, otherwise assign 0." Around 13 percent of 
+# the league won some kind of award. 
+
+mean(nba.data$award.winner)
+
+# We'll consider two separate regressions. The first uses our binary variable as 
+# an explanatory variable. Remember that when we do this, we can interpret the 
+# regression as telling us a difference in means between two groups (in this 
+# case, between award winners and non-winners). 
+
+# Consider the following regression: 
+
+lm(PTS ~ award.winner, nba.data) %>% summary()
+
+# QUESTION: Who has a higher scoring average, awards winners or non-awards 
+# winners. How large is the difference? 
+
+
+
+# Next, let's use our award winner variable as an outcome variable. Let's see 
+# how minutes played (MP) and points scored (PTS) affect the probability that 
+# you won an award. 
+
+q6.model <- lm(award.winner ~ PTS + MP, nba.data)
+
+summary(q6.model)
+
+# When we have a binary outcome variable, our regression tells us how our
+# explanatory variables change the predicted probability that our outcome 
+# variable is equal to 1 (in this case, that someone won an award). 
+
+# Let's look at the coefficient on points: 
+
+q6.model$coefficients["PTS"]
+
+# This says that for each additional point that a player scores, the probability
+# that they win an award increases by 4 percentage points (p.p.). You can think
+# about multiplying the coefficient here by 100 p.p. if it helps - remember that
+# the event (winning an award here) happens if Y = 1, hence the scaling.
+
+# QUESTION: Consider the coefficient on minutes played - does it seem odd that 
+# the coefficient is negative? Remember that we have controlled for points 
+# scored - if we are holding points scored fixed, does it make more sense that
+# minutes is negatively related to the probability of winning an award?
 
 
 
