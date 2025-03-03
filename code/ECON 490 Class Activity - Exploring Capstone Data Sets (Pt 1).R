@@ -29,8 +29,8 @@ crime.data <- read_csv(crime.url)
 # Then load state economic data: 
 
 state.data <- paste0("https://raw.githubusercontent.com/mackaytc/R-resources/", 
-                    "main/data/longer-run-state-level-data/", 
-                    "longer-run-state-by-year-data.csv")
+                     "main/data/longer-run-state-level-data/", 
+                     "longer-run-state-by-year-data.csv")
 
 state.data <- read_csv(state.data)
 
@@ -61,12 +61,13 @@ head(state.data)
 # to state and year combinations that are present in BOTH data sets. Because
 # the time range of our data is identical, we'll keep all 750 rows. 
 
-working.data <- inner_join(state.data, crime.data)
+working.data <- inner_join(state.data, crime.data, 
+                           by = c("year", "statefip", "state_name"))
 
-# Take a look at the output below - R recognized that year, statefip, and
-# state_name were shared between both data sets, and used these as the ID (or
-# "key") variables to combine both data sets. The other variables from both data
-# sets are now included as well.
+# Take a look at the output below - R used the year and statefip variables as ID
+# variables to combine both data sets. Our new working.data object has these
+# variables in addition to all of the variables included in both of our original
+# data sets. 
 
 head(working.data)
 
