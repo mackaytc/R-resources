@@ -1,10 +1,15 @@
 ---
 title: "`R` Handout: Learning to Speak `R`"
-output: pdf_document
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+set.seed(490)
 ```
 
 # Basic Terminology
@@ -16,21 +21,21 @@ describing your programming experience to someone, you might say "I've used
 
 ## Base `R` and Packages
 
-When you open `R` + `RStudio` for the fist time, there's lots of functions 
+When you open `R` + `RStudio` for the first time, there's lots of functions 
 that are included by default (e.g., `mean()`, `lm()`, etc.). These functions
-are known as "Base `R`" - its what's included with `R` "out of the box." In 
+are known as "Base `R`" - it's what's included with `R` "out of the box." In 
 this class, we'll make use of several _packages_ like `tidyverse`. Packages
 are collections of functions that aren't part of base `R`. 
 
-To use packages in `R`, you first need to install them using the `install()`
-function. You only need to run this command once on your computer. Each time
-you open `R`, however, you'll need to _load_ the packages you want to use, 
-using the `library()` function. This is a way of telling `R`, "I want to use 
-the functions in this package". 
+To use packages in `R`, you first need to install them using the 
+`install.packages()` function. You only need to run this command once on your 
+computer. Each time you open `R`, however, you'll need to _load_ the packages 
+you want to use, using the `library()` function. This is a way of telling 
+`R`, "I want to use the functions in this package". 
 
 # Scripts and Running Code in `R`
 
-In this class, we'll general work with `R` scripts - in your file explorer, 
+In this class, we'll generally work with `R` scripts - in your file explorer, 
 these files will have a `.R` file extension. Scripts are collections of `R`
 code. To run code in an `R` script, you can click on the line of code (or 
 select it with your mouse) and press `Ctrl + Enter` (or `Apple logo / Cmd key + 
@@ -42,7 +47,7 @@ of the lines you want to run, then use the hot keys above. You can also use the
 
 ## Scripts and the Command Line
 
-When you open `Rstudio`, one of the four panels you'll see is the `Console`. 
+When you open `RStudio`, one of the four panels you'll see is the `Console`. 
 You can run code in the command line by clicking to the right of the `>` 
 symbol. This can be a convenient way to check a line of code you're writing, 
 or to access help files for a function by typing `?` and then the function
@@ -57,7 +62,7 @@ sessions (meaning, if you close `R` you'll lose what you've entered there).
 ## Comments in your Code
 
 An important part of well-written code is _comments_. You can create a comment
-by starting a line with a hash tag - `#`. This tells `R`, "ignore this next 
+by starting a line with a hash mark - `#`. This tells `R`, "ignore this next 
 line." Leaving comments is part of _documenting_ your code - explaining what
 you're doing so that other people can understand your analysis and read your
 code. 
@@ -98,7 +103,7 @@ This object is also available now by calling `a` in the command line.
 ## The Assignment Operator 
 
 Notice how we used `<-` above to _assign_ the value of `5` to the object `a`?
-In `R`, `<-` is the _assignment operator_. You can read it as synonmous with 
+In `R`, `<-` is the _assignment operator_. You can read it as synonymous with 
 "equals". You can use the hot key combination `Alt + -` to save having to 
 type both symbols separately. 
 
@@ -108,7 +113,7 @@ In `R`, we can create several different kinds of objects or data types using the
 
 -   **Numeric**: stores a single value (like `a` stores `5` above)
 -   **Logical**: stores binary values `TRUE` or `FALSE`
--   **Character**: also known as string objects, these stores strings of text 
+-   **Character**: also known as string objects, these store strings of text 
 (like "hello world")
 
 We can use `is` functions in `R` to check whether an object is the type that 
@@ -138,8 +143,8 @@ is.logical(a.logical)
 ## Vectors in `R` 
 
 Vectors are the basic "building blocks" of data in `R` - they're collections
-of items stored together. In general, these items should generally all share 
-one of the basic `R` object types. To create vectors, we'll use the
+of items stored together. In general, these items should all share one of the 
+basic `R` object types. To create vectors, we'll use the
 `c()` function to define the list of items we want to combine, like so: 
 
 ```{r}
@@ -202,7 +207,7 @@ uniformly-distributed random variables using `runif()`.
 
 ```{r}
 # Start by creating a vector with 100 draws from a normally-distributed random 
-# variables using the rnorm function - set mean = 1 and sd 2
+# variables using the rnorm function - set mean = 1 and sd = 2
 
 normal.vector <- rnorm(100, mean = 1, sd = 2)
 

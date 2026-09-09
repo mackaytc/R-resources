@@ -1,4 +1,4 @@
-w---
+---
 title: "`R` Overview: Learning to Speak `R`"
 date: "2023-08-24"
 output: beamer_presentation
@@ -34,7 +34,7 @@ In this class, we'll use several _packages_ like `tidyverse`
 
 Using packages in `R`
 
-  * Install them using the `install()` function (just once)
+  * Install them using the `install.packages()` function (just once)
   * _Load_ them using the `library()` function. 
   
 This tells `R`, "I want to use the functions in this package." 
@@ -43,7 +43,7 @@ This tells `R`, "I want to use the functions in this package."
 
 ## Scripts and Running Code in `R`
 
-In this class, we'll general work with `R` scripts 
+In this class, we'll generally work with `R` scripts 
 
   * These files will have a `.R` file extension. 
   * Scripts are collections of `R` code. 
@@ -62,17 +62,17 @@ If you want to run several lines of code at one time,
 
 ## Scripts and the Command Line
 
-The `Console` is one of the four default panels in `Rstudio`
+The `Console` is one of the four default panels in `RStudio`
 
   * You can run code by clicking next to the `>` symbol
   * Convenient way to test a line of code
-  * Use it to access documentation using "`?`" - e.g, `?mean` 
+  * Use it to access documentation using "`?`" - e.g., `?mean` 
   
 \bigskip
 
 __AN IMPORTANT NOTE__
 
-  * When something's important, make sure its saved in a script!
+  * When something's important, make sure it's saved in a script!
   * _Don't_ rely on the command line (you'll lose your work)
 
 
@@ -81,7 +81,7 @@ __AN IMPORTANT NOTE__
 
 An important part of well-written code is _comments_. 
 
-  * Start a line with a hash tag - `#`. 
+  * Start a line with a hash mark - `#`. 
   * This tells `R`, "ignore this next line." 
   
 _Documenting_ your code means explaining what you're doing 
@@ -128,7 +128,7 @@ In `R`, we can create different _types_ of objects, including:
 
 -   **Numeric**: stores a single value (like `a` stores `5` above)
 -   **Logical**: stores binary values `TRUE` or `FALSE`
--   **Character**: also known as string objects, these stores strings of text 
+-   **Character**: also known as string objects, these store strings of text 
 (like "hello world")
 
 \bigskip
@@ -145,7 +145,7 @@ Given an object, we can use "`is`" functions to check types
 
 ```{r Data Types, echo = TRUE}
 
-# Check if a object from above is numeric 
+# Check if our a object from above is numeric 
 
 is.numeric(a)
 
