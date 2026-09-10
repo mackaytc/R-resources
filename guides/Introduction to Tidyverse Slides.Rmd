@@ -191,7 +191,7 @@ summary.stats.table <- sample.data %>%
 
 
 
-## Grouping Data with `group_by`
+## Grouping Data with `group_by()`
 
 ```{r}
 # Calculating average wages grouped by employed 
@@ -208,10 +208,12 @@ group.avg.wages <- sample.data %>%
 ## Grouping Data with `group_by()` Continued
 
 ```{r}
-# Create a new variable using mutate
+# Create a new variable using mutate, then ungroup() so
+# later code doesn't silently run group-by-group
 
 sample.data <- sample.data %>% 
   group_by(employed) %>% 
-  mutate(avg.wage = mean(wage.inc))
+  mutate(avg.wage = mean(wage.inc)) %>% 
+  ungroup()
 
 ```
